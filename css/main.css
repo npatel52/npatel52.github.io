@@ -1,0 +1,74 @@
+header{
+  display: block;
+  background-color: #f0f5f5;
+  height: 150px;
+  padding-top: 50px;
+}
+
+#time_form{
+  font-size: 20px;
+}
+
+#date_and_time{
+  font-weight: 100;
+}
+
+input[type=text]{
+  width: 40px;
+  height: 50px;
+  font-size: 35px;
+  font-weight: 100;
+  padding: 0px 1px 0px 1px; /* top left bottom right */
+  border: 2px solid black;
+  border-radius: 9px;
+}
+
+/* source: css-tricks.com */
+button{
+  border: 0;
+  box-sizing: border-box; /* allows border inside box */
+  background: white;
+  width:0px;
+  height:70px;
+  border-color: transparent transparent transparent #4db8ff;
+  transition: 100ms all ease;
+  cursor: pointer;
+  margin-left: 40px;
+  will-change: border-width;
+
+}
+
+/* for transition from play to pause */
+/* start button */
+.start{
+  border-style: solid;
+  border-width: 35px 0px 35px 70px; /* top right bottom left */
+}
+
+/* stop button */
+.stop{
+    border-style: double; /* for parallel lines*/
+    border-width: 0px 0px 0px 70px;
+}
+
+button:hover{
+  transition-timing-function: ease-in-out;
+  animation: pop 2s;
+}
+
+@keyframes pop{
+  50%  {transform: scale(1.2);} /* scale works best */
+}
+
+#time_display{
+  font-size: 250px;
+  line-height: 0px;
+  margin-top: 120px;
+  margin-bottom: 110px;
+}
+
+
+body{
+  font-family: "Courier New";
+  text-align: center;
+}
