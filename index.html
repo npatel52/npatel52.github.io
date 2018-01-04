@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- on refresh, variable default, button on and off on space key -->
+<html>
+<head>
+	<title> Timer Beta </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src = "timer.js"></script>
+	<!--for valid data from user-->
+	<script src = "handler.js"></script>
+	<script src = "dt.js"> </script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<audio id = "audio" src = "time_end.wav" type = "audio/wav" preload="auto" hidden = "true" controls = "controls"></audio>
+</head>
+
+<body>
+		<!-- header for user input -->
+		<div>
+
+		<header id = "header">
+			<div id>
+					<form id = "time_form">
+						<input id = "hours" type = "text" maxlength = "2" value = "00">HH
+						<input id = "minutes" type = "text" maxlength = "2" value = "00">MM
+						<input id = "seconds" type = "text" maxlength = "2" value = "00">SS
+						<!-- type button is important! to avoid reloading page -->
+			</form>
+		</div>
+		<h3 id = "date_and_time"> </h3>
+		</header>
+
+		<!-- Timer display -->
+	<div id >
+		<p id = "time_display"> 00:00:00 </p>
+		<button type = "button" class = "start" >  </button>
+	</div>
+	</div>
+</body>
+</html>
